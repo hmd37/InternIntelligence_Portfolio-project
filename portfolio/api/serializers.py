@@ -19,20 +19,24 @@ class RegisterSerializer(serializers.ModelSerializer):
         )
         return user
 
+
 class ProjectSerializer(serializers.ModelSerializer):
     class Meta:
         model = Project
         fields = '__all__'
+
 
 class SkillSerializer(serializers.ModelSerializer):
     class Meta:
         model = Skill
         fields = '__all__'
 
+
 class AchievementSerializer(serializers.ModelSerializer):
     class Meta:
         model = Achievement
         fields = '__all__'
+
 
 class ContactSerializer(serializers.ModelSerializer):
     class Meta:
